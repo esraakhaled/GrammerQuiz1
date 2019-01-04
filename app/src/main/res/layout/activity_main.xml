@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+        <EditText
+            android:id="@+id/name_field"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:inputType="textCapWords"
+            android:hint="NAME OF STUDENT "
+            />
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:layout_marginTop="16dp"
+            android:text="Choose one or more if needed"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                style="@style/HeaderTextStyle"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="1.Are You busy?"
+                android:textSize="20sp"/>
+            <CheckBox android:id="@+id/Yes_IAM_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YES, I AM."
+                android:padding="24dp"
+                android:textSize="16sp"
+                />
+            <CheckBox android:id="@+id/Yes_WE_ARE_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YES, WE ARE."
+                android:padding="24dp"
+                android:textSize="16sp"
+                />
+            <CheckBox android:id="@+id/NO_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NO."
+                android:padding="24dp"
+                android:textSize="16sp"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check"
+                android:textColor="#0336FF"
+                android:onClick="chooseQuestion1"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="16dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                style="@style/HeaderTextStyle"
+                android:layout_marginTop="16dp"
+                android:text="Choose only one answer"/>
+            <TextView
+                style="@style/HeaderTextStyle"
+                android:layout_marginTop="16dp"
+
+                android:layout_marginBottom="16dp"
+                android:text="2.I .....tennis every sunday morning."
+                android:textSize="20sp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/playing_radio"
+                android:text="Playing"
+                android:padding="24dp"
+                android:textSize="16sp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Play"
+                android:id="@+id/play_radio"
+                android:padding="24dp"
+                android:textSize="16sp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="am playing"
+                android:id="@+id/am_playing_radio"
+                android:padding="24dp"
+                android:textSize="16sp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="am play"
+                android:id="@+id/am_play_radio"
+                android:padding="24dp"
+                android:textSize="16sp"/>
+            </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check"
+                android:onClick="chooseQuestion2"
+                android:textColor="#0336FF"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="16dp"/>
+            <TextView
+                style="@style/HeaderTextStyle"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="3.Don't make so much nise.Noriko...to study her Esl test!"
+                android:textSize="20sp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="try"
+                android:id="@+id/try_radio"
+                android:padding="24dp"
+                android:textSize="16sp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tries"
+                android:id="@+id/tries_radio"
+                android:padding="24dp"
+                android:textSize="16sp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tried"
+                android:id="@+id/tried_radio"
+                android:padding="24dp"
+                android:textSize="16sp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="is trying"
+                android:id="@+id/is_trying_radio"
+                android:padding="24dp"
+                android:textSize="16sp"/>
+            </RadioGroup>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check"
+                android:textColor="#0336FF"
+                android:onClick="chooseQuestion3"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="16dp"/>
+            <TextView
+                style="@style/HeaderTextStyle"
+                android:layout_marginTop="16dp"
+
+                android:layout_marginBottom="16dp"
+                android:text="4.Esraa....tired"
+                android:textSize="20sp"/>
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="be"
+                android:id="@+id/be_radio"
+                android:padding="24dp"
+                android:textSize="16sp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="is"
+                android:id="@+id/is_radio"
+                android:padding="24dp"
+                android:textSize="16sp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="has"
+                android:id="@+id/has_radio"
+                android:padding="24dp"
+                android:textSize="16sp"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="have"
+                android:id="@+id/have_radio"
+                android:padding="24dp"
+                android:textSize="16sp"/>
+            </RadioGroup>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check"
+                android:textColor="#0336FF"
+                android:onClick="chooseQuestion4"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="16dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                style="@style/HeaderTextStyle"
+                android:layout_marginTop="16dp"
+                android:text="5.Find the mistake:"/>
+            <TextView
+                style="@style/HeaderTextStyle"
+                android:layout_marginTop="16dp"
+                android:text="Where live you? "/>
+            <EditText
+                android:id="@+id/answer_field"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:inputType="textCapWords"
+                android:hint="type the mistake"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check"
+                android:textColor="#0336FF"
+                android:onClick="chooseQuestion5"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="16dp"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:onClick="submitOrder"
+                android:textColor="#0336FF"
+                android:gravity="center_horizontal"
+                android:layout_marginLeft="16dp"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</ScrollView>
